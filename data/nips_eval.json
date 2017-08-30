@@ -1,0 +1,54 @@
+{
+    "xworld" : {
+        "dimensions" : {
+            "height" : 7,
+            "width" : 7
+        },
+
+        "levels" : 5,
+
+        "items" : {
+            "agent" : {
+                "number" : [1],
+                "instances" : {
+                }
+            },
+
+            "goal" : {
+                "number" : [3],
+                "in_a_row_prob" : 0.1,
+                "category" : [
+                    "animal",
+                    "fruit",
+                    "shape"
+                ],
+                "instances" : {
+                }
+            },
+
+            "block" : {
+                "number" : [10],
+                "instances" : {
+                }
+            }
+        }
+    },
+
+    "teacher" : {
+        "task_groups" : {
+            "XWorldNav" : {
+                "held_out" : [
+                ],
+                "weight" : 1.0,
+                "schedule" : "random",
+                "in_a_row_prob" : 0.1,
+                "tasks" : {
+                    "XWorldNavTargetTask" : 1,
+                    "XWorldNavNearTask" : 1,
+                    "XWorldNavColorTargetTask" : 1,
+                    "XWorldNavBetweenTask" : 1
+                }
+            }
+        }
+    }
+}
