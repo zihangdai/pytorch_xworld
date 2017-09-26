@@ -19,7 +19,7 @@ matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 
 from py_simulator import Simulator
-from config import xworld_config, navonly_config
+from config import xworld_config
 from model import Agent
 from vocab import Vocab
 from replay_memory import *
