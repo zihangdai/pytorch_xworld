@@ -5,8 +5,8 @@ class xworld_config:
     env_name = 'xworld'
 
     vocab_dir = './data'
-    conf_path = 'data/nips.json'
-    eval_conf_path = 'data/nips_eval.json'
+    conf_path = 'data/navigation.json'
+    eval_conf_path = 'data/navigation.json'
 
     curriculum = 10000
     need_mem_cmd = 0
